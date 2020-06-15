@@ -61,7 +61,7 @@ var bug = new Schema({
     closed: { type: Boolean, required: true, default: false },
     description: { type: String, required: true },
     title: { type: String, required: true },
-    closedDate: { type: Date}
+    closedDate: { type: Date},
     creatorEmail: { type: String, required: true }
 }, { timestamps: true, toJSON: { virtuals: true } })
 ```
@@ -71,8 +71,8 @@ var bug = new Schema({
 ```Javascript
 var note = new Schema({
     content: { type: String, required: true },
-    bug: { type: ObjectId, ref: 'Bug' required: true },
-    flagged: { type: String, enum: ["pending", "completed", "rejected"] }
+    bugId: { type: ObjectId, ref: 'Bug' required: true },
+    flagged: { type: String, enum: ["pending", "completed", "rejected"] },
     creatorEmail: { type: String, required: true }
 }, { timestamps: true, toJSON: { virtuals: true } })
 ```
@@ -117,30 +117,30 @@ Delete
 
 ### Visualization
 
-- At least 2 supported front end routes
-  - Home shows all bugs
-  - BugDetails displays the details of a bug and its Notes
-- Bugs can be filtered by their status
-- Creating a new bug automatically navigates to the BugDetails view
-- Navbar to allow navigating back to Home view
-- Styling Indication on main page that bug is closed (color, strike-through, etc.)
-- Bugs display last modified date
+<!-- - At least 2 supported front end routes -->
+  <!-- - Home shows all bugs -->
+  <!-- - BugDetails displays the details of a bug and its Notes -->
+<!-- - Bugs can be filtered by their status -->
+<!-- - Creating a new bug automatically navigates to the BugDetails view -->
+<!-- - Navbar to allow navigating back to Home view -->
+<!-- - Styling Indication on main page that bug is closed (color, strike-through, etc.) -->
+<!-- - Bugs display last modified date -->
 
 ### Functionality
 
-- Users Can Register, Login, and Logout (this should work out of the box, don't break it)
-- Users can only modify/delete data they created
-- Bugs can be created from the Home view
-- Bugs can be closed from the BugDetails view
-- User is prompted "are you sure?" when closing a Bug
-- Notes can be added and removed from a bug in the BugDetails view
-- User prompt to remove Note from Bug
-- A Bug can be edited
-- Cannot edit a Bug after it is closed
+<!-- - Users Can Register, Login, and Logout (this should work out of the box, don't break it) -->
+<!-- - Users can only modify/delete data they created -->
+<!-- - Bugs can be created from the Home view -->
+<!-- - Bugs can be closed from the BugDetails view -->
+<!-- - User is prompted "are you sure?" when closing a Bug -->
+<!-- - Notes can be added and removed from a bug in the BugDetails view -->
+<!-- - User prompt to remove Note from Bug -->
+<!-- - A Bug can be edited -->
+<!-- - Cannot edit a Bug after it is closed -->
 
 #### Challenges
 
-- Implement user auth
+<!-- - Implement user auth -->
 - Modals for creating Bugs
 - Modals for creating Notes
 - Use sweet alert for prompts
