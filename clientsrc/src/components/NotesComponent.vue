@@ -1,7 +1,7 @@
 <template>
   <div class="NotesComponent row bg-light">
-    <div id="note-creator" class="col-3 border text-left py-1">{{noteProp.creatorEmail}}</div>
-    <div id="note-content" class="col-7 border text-left py-1">{{noteProp.content}}</div>
+    <div id="note-creator" class="col-4 col-md-3 border text-left py-1">{{noteProp.creatorEmail}}</div>
+    <div id="note-content" class="col-6 col-md-7 border text-left py-1">{{noteProp.content}}</div>
     <div id="note-buttons" class="col-2 border text-center py-1"><i v-if="userIsCreator" class="fas mr-2 fa-edit pointer" @click="editNoteForm = !editNoteForm"></i><i v-if="userIsCreator" class="far fa-trash-alt ml-2 pointer" @click="deleteNote"></i></div>
     <div class="col-12 my-2" v-if="editNoteForm">
       <form class="form-inline" @submit.prevent="editNote">
