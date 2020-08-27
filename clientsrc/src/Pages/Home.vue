@@ -39,7 +39,13 @@
               <div id="bug-status" class="text-success col-2 border text-center py-1">
                 <span v-if="bug.closed == false" class="text-success">OPEN</span><span v-else class="text-danger">CLOSED</span>
               </div>
-              <div id="bug-date" class="col-3 border text-right py-1">{{bug.updatedAt}}</div>
+              <div id="bug-date" class="col-3 border text-right py-1">{{
+              new Date(bug.updatedAt).toLocaleString("en-US", {
+                month: "short",
+                day: "numeric",
+                year: "numeric",
+              })
+            }}</div>
             </div>
           </router-link>
         </div>
