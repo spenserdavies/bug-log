@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-7 text-center bg-light mx-auto mt-3 pt-2 shadow">
         <p>This is your profile page!</p>
-        <p>Upon expansion of the main platform, the Home page will become crowded, <br> so come here to find your personal bugs</p>
+        <p>Upon expansion of the main platform, the Home page will become crowded, <br> so come here to find the bugs you reported</p>
         <p>The email associated with your account is: <b>{{ profile.email}}</b></p>
       </div>
     </div>
