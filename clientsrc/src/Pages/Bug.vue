@@ -50,7 +50,7 @@
       </form>
     </div>
 
-  <div class="row mt-2 border-bottom border-info bg-light">
+  <div class="row mt-2 border-bottom border-info bg-light" v-if="notes.length > 0">
     <div id="bug-title" class="col-4 col-md-3 border text-left py-1"><b>NAME</b></div>
     <div id="bug-creator" class="col-6 col-md-7 border text-left py-1"><b>MESSAGE</b></div>
     <div id="bug-date" class="col-2 border text-center py-1"><b>EDIT / DELETE</b></div>
