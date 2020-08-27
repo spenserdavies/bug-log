@@ -11,8 +11,8 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-12 mt-5">
-        <p>Your bugs:</p>
+      <div class="col-12 my-4 text-center">
+        <h4><u>Your Bugs:</u></h4>
       </div>
     </div>
     <div class="row">
