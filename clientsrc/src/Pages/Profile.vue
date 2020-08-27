@@ -27,7 +27,7 @@
             <div class="row  bg-light ">
               <div class="col-4 border text-left py-1">{{bug.title}}</div>
               <div class="col-6 border text-left py-1">{{bug.description}}</div>
-              <div id="bug-status" class="text-success col-2 border text-center py-1">
+              <div class="text-success col-2 border text-center py-1">
                 <span v-if="bug.closed == false" class="text-success">OPEN</span><span v-else class="text-danger">CLOSED</span>
               </div>
             </div>

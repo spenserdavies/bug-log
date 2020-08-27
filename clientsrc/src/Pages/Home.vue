@@ -36,7 +36,7 @@
             <div class="row">
               <div class="col-3 border text-left py-1">{{bug.title}}</div>
               <div id="bug-creator" class="col-4 border text-left py-1">{{bug.creatorEmail}}</div>
-              <div id="bug-status" class="text-success col-2 border text-left py-1">
+              <div id="bug-status" class="text-success col-2 border text-center py-1">
                 <span v-if="bug.closed == false" class="text-success">OPEN</span><span v-else class="text-danger">CLOSED</span>
               </div>
               <div id="bug-date" class="col-3 border text-right py-1">{{bug.updatedAt}}</div>
