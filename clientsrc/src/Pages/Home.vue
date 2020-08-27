@@ -8,7 +8,7 @@
 
         <div class="row my-4">
       <div class="col-10 mx-auto card shadow text-center py-1">
-        <small>You can view Bugs and Notes without logging in.  However, to create/edit a bug report, add a note, or close a bug, you must log in.</small>
+        <small>You can view Bugs table without logging in.  However, to view details about/create/edit a bug report, add a note, or close a bug, you must log in.</small>
       </div>
     </div>
 
