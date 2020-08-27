@@ -26,18 +26,17 @@
         <h5>Status</h5>
       </div>
     </div>
-    <div class="row d-flex border-top" v-for="bug in bugs" :key="bug.id">
-      <div class="col-4 py-2 border-right">
-        <p> {{ bug.title }}</p>
-      </div>
-      <div class="col-6 py-2 border-right">
-        <p> {{bug.description}}</p>
-      </div>
-      <div class="col-2 py-2 text-center">
-        <p v-if="bug.closed" class="text-danger">CLOSED</p>
-        <p v-else class="text-success">OPEN</p>
-      </div>
-    </div>
+    <div v-for="bug in bugs" :key="bug.id" :bugProp="bug">
+          <router-link :to="{name: 'bug', params: {bugId: bug.id}}">
+            <div class="row">
+              <div class="col-4 border text-left py-1">{{bug.title}}</div>
+              <div class="col-6 border text-left py-1">{{bug.description}}</div>
+              <div id="bug-status" class="text-success col-2 border text-center py-1">
+                <span v-if="bug.closed == false" class="text-success">OPEN</span><span v-else class="text-danger">CLOSED</span>
+              </div>
+            </div>
+          </router-link>
+        </div>
   </div>
 </template>
 
