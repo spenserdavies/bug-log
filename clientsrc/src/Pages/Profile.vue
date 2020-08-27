@@ -1,12 +1,8 @@
 <template>
-  <div class="container bg-light shadow mt-3">
+  <div class="container mt-3">
     <div class="row">
-      <div class="col-12 mt-3">
+      <div class="col-7 text-center bg-light mx-auto mt-3 pt-2 shadow">
         <p>This is your profile page! Here you can see all of the bugs you have reported!</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 mt-3">
         <p>The email associated with your account is: <b>{{ profile.email}}</b></p>
       </div>
     </div>
@@ -28,7 +24,7 @@
     </div>
     <div v-for="bug in bugs" :key="bug.id" :bugProp="bug">
           <router-link :to="{name: 'bug', params: {bugId: bug.id}}">
-            <div class="row">
+            <div class="row  bg-light ">
               <div class="col-4 border text-left py-1">{{bug.title}}</div>
               <div class="col-6 border text-left py-1">{{bug.description}}</div>
               <div id="bug-status" class="text-success col-2 border text-center py-1">
