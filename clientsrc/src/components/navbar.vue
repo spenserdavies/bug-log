@@ -31,7 +31,7 @@
         </li>
       </ul>
       <span class="navbar-text">
-        <button class="btn btn-info mx-2 align-self-center" @click="bugForm = true">REPORT</button>
+        <button class="btn btn-info mx-2 align-self-center" v-if="$auth.isAuthenticated" @click="bugForm = true">REPORT</button>
         <button class="btn btn-info" @click="login" v-if="!$auth.isAuthenticated">Login</button>
         <button class="btn btn-danger" @click="logout" v-else>logout</button>
       </span>
