@@ -1,11 +1,11 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 // @ts-ignore
-import Home from "../Pages/Home.vue";
+import Home from "../pages/Home.vue";
 // @ts-ignore
-import Profile from "../Pages/Profile.vue";
+import Profile from "../pages/Profile.vue";
 // @ts-ignore
-import Bug from "../Pages/Bug.vue";
+import Bug from "../pages/Bug.vue";
 import { authGuard } from "@bcwdev/auth0-vue";
 
 Vue.use(VueRouter);
